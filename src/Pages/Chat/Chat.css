@@ -1,0 +1,162 @@
+.Chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 2vw;
+  background-color: #000000;
+}
+
+.ChatsAvailable {
+  color: #ffffff;
+  padding: 2.5vh 0.5vw;
+  font-weight: 600;
+  font-size: 25px;
+  margin-bottom: 1vh;
+}
+
+.ChatAll {
+  border-right: 1px solid #2c2c2c3e;
+  background: rgb(35, 35, 35);
+  flex: 0.3;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 3vh 2vw;
+  border-radius: 30px;
+}
+
+.ChatAllChat {
+  border: 1px solid #ffffff3e;
+  border-radius: 30px;
+  padding: 2.5vh 2vw;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+
+  transition: 0.2s ease-in-out;
+}
+
+.ChatAllChat:hover {
+  background: #fff;
+  border: 1px solid #fff;
+  color: #000;
+}
+
+.ChatActive {
+  background: rgb(0, 0, 0);
+  flex: 0.7;
+  height: 100%;
+  padding: 5vh;
+  border-radius: 0 30px 30px 0;
+}
+
+.NoChatActive {
+  border: 1px solid e1e1e1f5;
+  border-radius: 0 30px 30px 0;
+  flex: 0.7;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 50px;
+  font-size: 72px;
+  font-style: italic;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #000000;
+  -webkit-text-fill-color: rgba(199, 222, 240, 0.65);
+}
+
+.ChatMessageContainerTop {
+  border-radius: 30px;
+  border: 1px solid #e1e1e1f5;
+  position: fixed;
+  top: 10%;
+  width: 55vw;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 1vw;
+}
+
+.Sentiment {
+  font-weight: 600;
+}
+
+.ChatMessageContainer {
+  height: 85%;
+  border: 1px solid #2c2c2c5c;
+  margin-top: 5vh;
+  margin-bottom: 1.5vh;
+  overflow-y: scroll;
+  border-radius: 30px;
+  padding: 40px;
+  background: #e1e1e1f5;
+}
+
+.ChatMessageContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.ChatMessage {
+  padding: 1.5vh 1vw;
+  margin: 1vh 0;
+  border-radius: 20px;
+}
+
+.ChatNotification {
+  padding: 1.5vh 1vw;
+  text-align: center;
+  font-weight: 600;
+  color: #003474;
+}
+
+.ChatMessage:nth-child(odd) {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.ChatMessage:nth-child(even) {
+  background-color: #757575;
+  color: #ffffff;
+  display: flex;
+}
+
+.ChatSendContainer {
+  height: 10%;
+  display: flex;
+  border: 1px solid #2c2c2c;
+  border-radius: 50px;
+}
+
+.ChatInput {
+  border: none;
+  outline: none;
+  height: 100%;
+  flex: 0.9;
+  font-size: 18px;
+  border-radius: 50px;
+  padding: 0 2vw;
+}
+
+.ChatSendButton {
+  flex: 0.1;
+  border: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: transparent;
+  cursor: pointer;
+  padding: 0 2vw;
+}
+
+.skewbox {
+  border: 3px solid #fff;
+  transform: skew(-10deg);
+  padding: 20px;
+}
