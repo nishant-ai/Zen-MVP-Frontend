@@ -28,8 +28,7 @@ function Chat() {
   );
 
   const joinRoom = (_room) => {
-    room !== "" && socket.emit("leave-room", room);
-
+    room !== "" && socket.emit("leave-room", room); // Leave Room if any joined
     socket.emit("join-room", _room);
   };
 
@@ -94,9 +93,7 @@ function Chat() {
                 {sentiment < -2.5 && sentiment > -3.5 && "🥺"}
                 {sentiment < -3.5 && "😭"}
               </div>
-              <div className="ChatNotification">
-                You have joined {room} room!
-              </div>
+              <div className="ChatNotification">{room}</div>
             </div>
           </div>
           <form onSubmit={sendMessage} className="ChatSendContainer">

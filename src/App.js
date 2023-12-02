@@ -5,8 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
 import Home from "./Pages/Home/Home";
 import Chat from "./Pages/Chat/Chat";
-import Signup from "./Pages/Signup/Signup";
-import Login from "./Pages/Login/Login";
 
 function App() {
   useEffect(() => {
@@ -27,8 +25,6 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route exact path="/chat" element={<Chat />} />
-          <Route exact path="/user/login" element={<Login />} />
-          <Route exact path="/user/signup" element={<Signup />} />
         </Routes>
       </Router>
     </div>
